@@ -3,8 +3,10 @@
 ## A proof-of-concept, minimal, multi-threaded , concurrent , TCP Connect port scanner and reconnaissance tool , which can scan and gather info about single/multiple host/s concurrently
 
 
+
  It serves as a port scanner,where it scans for any range of TCP ports of any host ,and identifies them as either open or closed.
  It also gives info about different whois queries .
+
 
 
  It takes different inputs as command-line arguments,and spits out a huugeee pretty-printed object of different info
@@ -14,10 +16,12 @@
  As,of now it supports only 3 different kinds (sets) of command line args,each of them serving quite a different purpose
 
 
+
 * Takes in a JSON file path(absolute),containing info (url/domain name, range of ports to be scanned) about various hosts,
   and number of processes to be spawned for concurrent scanning of multiple hosts,and logs a pretty-printed JSON object containing
   info of all those hosts. cd
-     
+
+
    > The JSON file has the following format : 
      
      
