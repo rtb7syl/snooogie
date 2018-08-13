@@ -1,5 +1,6 @@
 # snooogie
-## A multi-threaded ,concurrent,TCP Connect port scanner and reconnaissance tool , which can scan and gather info about single/multiple host/s concurrently
+
+## A proof-of-concept, minimal, multi-threaded , concurrent , TCP Connect port scanner and reconnaissance tool , which can scan and gather info about single/multiple host/s concurrently
 
 
  It serves as a port scanner,where it scans for any range of TCP ports of any host ,and identifies them as either open or closed.
@@ -155,5 +156,36 @@
         'zipcode': 
         
         }
-     
+
+Use the --help flag if you run into any trouble.
+
+```
+$ python main.py -h
+
+```
+
+Also if you want some service to communicate with this app, it's kinda easy too. Cause communication happens through an easy to parse JSON object.
+
+Just clone the project, view the main.py file ( the entry point of this project ).
+Import the module ,and use which-ever utility you need.
+
+Also there's some helper utility modules under src/helpers, which provides some basic utility functions like getting top-level domain names, getting ip from a domain-name etc.
+
+Use them as,you wish. 
+
+The code is quite modular, there's also quite a bit documentation in form of comments in between codes too :P 
+It'd be not too hard to use them, or customize them according to your own needs,if you wish.
+
+
+The project is not yet complete,and under development.
+
+Future avenues I want to explore:
+
+* TCP ACK / SYN scans to speed my scanner more , and also to determine whether the port is actually closed or a firewall rule is            blocking the incoming packets.
+
+*  TCP FIN scan
+
+*  UDP scan
+
+*  Use multiprocessing to spawn mutiple child processes to batch scan multiple ports concurrently, so that TCP connect scan becomes  faster
 
