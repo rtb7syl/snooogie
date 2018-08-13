@@ -16,14 +16,14 @@
      and number of processes to be spawned for concurrent scanning of multiple hosts,and logs a pretty-printed JSON object containing
      info of all those hosts. 
      
-  >The JSON file has the following format : 
+    > The JSON file has the following format : 
      
      
-     ['{"hostURL : <host_url0>,"minPort":<min_port0>,"maxPort":<max_port0>}',
-      '{"hostURL : <host_url1>,"minPort":<min_port1>,"maxPort":<max_port1>}' ,
-      '{"hostURL : <host_url2>,"minPort":<min_port2>,"maxPort":<max_port2>}' ,
-       .............
-       .............
-     ]
+       ['{"hostURL : <host_url0>,"minPort":<min_port0>,"maxPort":<max_port0>}',
+        '{"hostURL : <host_url1>,"minPort":<min_port1>,"maxPort":<max_port1>}' ,
+        '{"hostURL : <host_url2>,"minPort":<min_port2>,"maxPort":<max_port2>}' ,
+         .............
+         .............
+       ]
 
      
