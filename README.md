@@ -30,6 +30,7 @@
     For this just clone the project.
     
     ```
+    $ git clone https://github.com/rtb7syl/snooogie.git
     $ cd src
     $ python main.py -j <abs path of JSON file> -n <no. of processes to be spawned>
     
@@ -70,3 +71,89 @@
         ........
         
       ]
+      
+      
+      
+* Takes in a host IP , min-port and max-port as arguments ,and spits out a pretty-printed JSON containing all the recon info.
+
+   ```
+   $ git clone https://github.com/rtb7syl/snooogie.git
+   $ cd src
+   $ python main.py -hIP <IP of host> -minP <min port> -maxP <max port>
+   
+   ```
+   
+   > The output JSON has the following fields :
+   
+        {
+        'address': ,
+        'city': ,
+        'closedPorts': [],
+        'country': ,
+        'creation_date': [],
+                          
+        'dnssec': ,
+        'domain_name': [],
+        'emails': [],
+        'expiration_date': [],
+        
+        'hostIP': ,
+        'name': ,
+        'name_servers': []
+                         
+        'openPorts': [],
+        'org': ,
+        'referral_url': ,
+        'registrar': ,
+        'state': ,
+        'status': [],
+        'updated_date': [],
+        'whois_server': ,
+        'zipcode': 
+        
+        }
+
+
+
+
+
+* Takes in a host domain name/url , min-port and max-port as arguments ,and spits out a pretty-printed JSON containing all the recon info.
+
+   ```
+   $ git clone https://github.com/rtb7syl/snooogie.git
+   $ cd src
+   $ python main.py -u <host domain name or url> -minP <min port> -maxP <max port>
+   
+   ```
+   
+   > The output JSON has the following fields :
+   
+        {
+        'address': ,
+        'city': ,
+        'closedPorts': [],
+        'country': ,
+        'creation_date': [],
+                          
+        'dnssec': ,
+        'domain_name': [],
+        'emails': [],
+        'expiration_date': [],
+        
+        'hostIP': ,
+        'name': ,
+        'name_servers': []
+                         
+        'openPorts': [],
+        'org': ,
+        'referral_url': ,
+        'registrar': ,
+        'state': ,
+        'status': [],
+        'updated_date': [],
+        'whois_server': ,
+        'zipcode': 
+        
+        }
+     
+
