@@ -12,7 +12,7 @@
 
  As,of now it supports only 3 different kinds (sets) of command line args,each of them serving quite a different purpose
 
- >1)  Takes in a JSON file path(absolute),containing info (url/domain name, range of ports to be scanned) about various hosts,
+ 1.  Takes in a JSON file path(absolute),containing info (url/domain name, range of ports to be scanned) about various hosts,
      and number of processes to be spawned for concurrent scanning of multiple hosts,and logs a pretty-printed JSON object containing
      info of all those hosts. The JSON file has the following format : 
      
@@ -24,4 +24,4 @@
        .............
      ]
 
-
+     
